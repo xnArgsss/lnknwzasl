@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Big Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+        .btn {
+            background-color: #4285F4;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn:hover {
+            background-color: #357ae8;
+            transform: scale(1.05);
+        }
+        .btn:active {
+            background-color: #2c5dac;
+            transform: scale(0.98);
+        }
+        /* Custom Favorite Button */
+        .favorite {
+            background-color: #f44336 !important; /* Red */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="buttonContainer"></div>
+
+    <script>
+        const container = document.getElementById("buttonContainer");
+
+        for (let i = 1; i <= 24; i++) {
+            const button = document.createElement("a");
+            button.className = "btn";
+            button.textContent = "Google " + i;
+            button.href = "https://www.google.com";
+            button.target = "_blank";
+
+            // Custom Conditions for Special Buttons
+            if (i === 1) {
+                button.textContent = "تابناک"; 
+                button.href = "https://www.tabnak.ir/";
+                button.style.backgroundColor = "orange"; // Add favorite color
+                button.style.color = "blue";
+            }
+            if (i === 2) {
+                button.textContent = "Fararu"; 
+                button.href = "https://fararu.com/";
+                button.style.backgroundColor = "Red" // Add favorite color
+            }
+            if (i === 3) {
+                button.textContent = "خبرآنلاین"; 
+                button.href = "https://www.khabaronline.ir/";
+                button.style.backgroundColor = "black" // Add favorite color
+            }
+            
+            if (i === 4) {
+                button.textContent = "بیتوته"; 
+                button.href = "https://www.beytoote.com/?m=1";
+                button.style.backgroundColor = "purple" // Add favorite color
+            }
+            
+            if (i === 5) {
+                button.textContent = "نمناک"; 
+                button.href = "https://namnak.com/";
+                button.style.backgroundColor = "violet" // Add favorite color
+            }
+            
+            if (i === 6) {
+                button.textContent = "مشرق"; 
+                button.href = "https://www.mashreghnews.ir/";
+                button.style.backgroundColor = "black" // Add favorite color
+            }
+            
+            if (i === 7) {
+                button.textContent = "Fars"; 
+                button.href = "https://farsnews.ir/showcase";
+                button.style.backgroundColor = "black" // Add favorite color
+            }
+            
+            if (i === 8) {
+                button.textContent = "نی نی سایت"; 
+                button.href = "https://www.ninisite.com/";
+                button.style.backgroundColor = "pink" // Add favorite color
+               button.style.color ="black";
+            }
+            
+            if (i === 9) {
+                button.textContent = "رکنا"; 
+                button.href = "https://www.rokna.net/";
+                button.style.backgroundColor = "red" // Add favorite color
+            }
+            
+            if (i === 10) {
+                button.textContent = "انتخاب"; 
+                button.href = "https://www.entekhab.ir/";
+                button.style.backgroundColor = "blue" // Add favorite color
+            }
+            
+            if (i === 11) {
+                button.textContent = "دنیای اقتصاد"; 
+                button.href = "https://donya-e-eqtesad.com/";
+                button.style.backgroundColor = "green" // Add favorite color
+            }
+            
+            if (i === 12) {
+                button.textContent = "اقتصاد نیوز"; 
+                button.href = "https://www.eghtesadnews.com/";
+                button.style.backgroundColor = "green" // Add favorite color
+            }
+            
+            if (i === 13) {
+                button.textContent = "تسنیم"; 
+                button.href = "https://www.tasnimnews.com/";
+                button.style.backgroundColor = "red" // Add favorite color
+            }
+            
+            if (i === 14) {
+                button.textContent = "صدا و سیما"; 
+                button.href = "https://www.iribnews.ir/";
+                button.style.backgroundColor = "blue" // Add favorite color
+            }
+            
+            if (i === 15) {
+                button.textContent = "مهر"; 
+                button.href = "https://www.mehrnews.com/";
+                button.style.backgroundColor = "blue" // Add favorite color
+            }
+            
+
+            if (i === 16) {
+                button.textContent = "فردانیوز"; 
+                button.href = "https://www.fardanews.com/";
+                button.style.backgroundColor = "red" // Add favorite color
+            }
+            
+            
+            if (i === 17) {
+                button.textContent = "الف"; 
+                button.href = "https://www.alef.ir/";
+                button.style.backgroundColor = "black" // Add favorite color
+            }
+            
+            if (i === 18) {
+                button.textContent = "ایسنا"; 
+                button.href = "https://www.isna.ir/";
+                button.style.backgroundColor = "black" // Add favorite color
+            }
+            
+            if (i === 19) {
+                button.textContent = "ساعد نیوز"; 
+                button.href = "https://saednews.com/";
+                button.style.backgroundColor = "red" // Add favorite color
+            }
+            
+            if (i === 20) {
+                button.textContent = "خبر ورزشی"; 
+                button.href = "https://www.khabarvarzeshi.com/";
+                button.style.backgroundColor = "blue" // Add favorite color
+            }
+            
+            
+            if (i === 21) {
+                button.textContent = "خبر فوری"; 
+                button.href = "https://www.khabarfoori.com/";
+                button.style.backgroundColor = "green" // Add favorite color
+            }
+            
+            
+            if (i === 22) {
+                button.textContent = "آخرین خبر"; 
+                button.href = "https://akharinkhabar.ir/";
+                button.style.backgroundColor = "red" // Add favorite color
+            }
+            
+            if (i === 23) {
+                button.textContent = "شرق"; 
+                button.href = "https://www.khabaronline.ir/";
+                button.style.backgroundColor = "red" // Add favorite color
+            }
+            
+            if (i === 24) {
+                button.textContent = "کیهان"; 
+                button.href = "https://kayhan.ir/";
+                button.style.backgroundColor = "black" // Add favorite color
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+            container.appendChild(button);
+        }
+    </script>
+
+</body>
+</html>
